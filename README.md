@@ -26,5 +26,11 @@ QuickView (Highlighting Features)
        
 When you start a drag, you include both the data you are moving and metadata describing this data as part of the call to the system. During the drag, the system sends drag events to the drag event listeners or callback methods of each View in the layout. The listeners or callback methods can use the metadata to decide if they want to accept the data when it is dropped.
 
+OUTPUT:
+--------
+
+
 ![SS1](http://4.bp.blogspot.com/-0J2KoIb8sNY/UonxqWtdKtI/AAAAAAAAAKI/T_xLKqlftig/s1600/1.png)
+
+
 ![SS2](http://1.bp.blogspot.com/-0jYxkbQlWxA/UonxrEYqlJI/AAAAAAAAAKQ/SOJXub-QWjA/s1600/2.PNG)
