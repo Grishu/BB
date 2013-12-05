@@ -5,8 +5,11 @@ Drag & Drop Views in Android
 QuickView (Highlighting Features)
 ----------------------------------------
 -Allow users to move data within your Activity layout using graphical gestures.
+
 -Supports operations besides data movement.
+
 -Only works within a single application.
+
 -Requires API 11.
 
      
