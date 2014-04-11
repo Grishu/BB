@@ -30,7 +30,7 @@ OUTPUT:
 --------
 
 
-![SS1](http://4.bp.blogspot.com/-0J2KoIb8sNY/UonxqWtdKtI/AAAAAAAAAKI/T_xLKqlftig/s1600/1.png)
+![SS1](http://3.bp.blogspot.com/-U-J18-ySvQ8/UvhudrbE4kI/AAAAAAAAA0w/NAxYgAZmCvw/s1600/1.PNG)
 
 
-![SS2](http://1.bp.blogspot.com/-0jYxkbQlWxA/UonxrEYqlJI/AAAAAAAAAKQ/SOJXub-QWjA/s1600/2.PNG)
+![SS2](http://1.bp.blogspot.com/-edEh1yV6Dfk/UvhueC7XllI/AAAAAAAAA04/EHojQVse03o/s1600/2.PNG)
