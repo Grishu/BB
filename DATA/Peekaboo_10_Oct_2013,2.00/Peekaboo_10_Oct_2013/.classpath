@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="lib" path="/Utils/bin/utils.jar"/>
+	<classpathentry exported="true" kind="lib" path="/gpuimage/bin/gpuimage.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/twitter4j-core-3.0.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/signpost-core-1.2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/signpost-commonshttp4-1.2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/gcm.jar"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="lib" path="D:/Grishma/Project Workspace/Client Project Workspace/FacebookSDK/bin/facebooksdk.jar" sourcepath="/FacebookSDK/src"/>
+	<classpathentry exported="true" kind="lib" path="D:/Grishma/Project Workspace/Client Project Workspace/FacebookSDK/libs/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

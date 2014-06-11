@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/bg_forgt"
+    android:layout_margin="10dp" >
+
+    <LinearLayout
+        android:id="@+id/unspacedlayot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/wdl_tvMesg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/font_white"
+            android:text="‘Peek’a’Boo! You’ve registered successfully, Welcome home!’"
+            android:textSize="20sp" />
+
+       
+        <RelativeLayout
+            android:id="@+id/welcomerl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+           
+        <Button
+            android:id="@+id/welcomebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thanks!"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+           android:background="@drawable/btn_lookbg" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

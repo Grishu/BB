@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_btn_bg" >
+
+    <RelativeLayout
+        android:id="@+id/ml_rlLayoutTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2" >
+
+        <ImageView
+            android:id="@+id/ml_ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/ml_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="MY ACCOUNT"
+            android:textColor="@color/title_font_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ml_ivSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/slideshowarrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ml_llLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ml_rlLayoutTop"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ml_llUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum=".4" >
+
+            <TextView
+                android:id="@+id/ml_tvUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.12"
+                android:gravity="left"
+                android:text="Username "
+                android:textColor="@color/font_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ml_etUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.28"
+                android:editable="true"
+                android:hint="UserName"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" >
+            </EditText>
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ml_llUser" >
+
+            <TextView
+                android:id="@+id/ml_tvPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/setting_btn_bg"
+                android:editable="false"
+                android:gravity="left|center"
+                android:inputType="text"
+                android:text="Change Password"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/font_white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/ml_llmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableRow1"
+            android:weightSum=".4" >
+
+            <TextView
+                android:id="@+id/ml_tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="Email  ID "
+                android:textColor="@color/font_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ml_etEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Change Email"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ml_llPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ml_llmail"
+            android:weightSum="0.4" >
+
+            <TextView
+                android:id="@+id/ml_tvPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".10"
+                android:gravity="left"
+                android:text="Mobile Number"
+                android:textColor="@color/font_white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ml_etPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".30"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ml_llalterEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ml_llPhone"
+            android:weightSum="0.4" >
+
+            <TextView
+                android:id="@+id/ml_tvAlterMail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".10"
+                android:gravity="left"
+                android:text="Alternate Email "
+                android:textColor="@color/font_white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ml_etAlternateEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="left"
+                android:hint="Alternate Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

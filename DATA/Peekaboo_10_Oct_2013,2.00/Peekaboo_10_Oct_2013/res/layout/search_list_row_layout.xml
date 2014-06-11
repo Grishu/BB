@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/slr_flLayoutTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.zeal.peak.obejects.RecyclingImageView
+            android:id="@+id/slr_rivImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/slr_ivImagePlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/slideshow_setting"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/slr_llLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/black_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/slr_tvProfilename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="Profile NAme"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

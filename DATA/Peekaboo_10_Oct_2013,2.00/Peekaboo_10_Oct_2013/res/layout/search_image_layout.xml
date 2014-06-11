@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sil_llLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context=".MainActivity1" >
+
+    <RelativeLayout
+        android:id="@+id/sil_rlLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/sil_ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/sil_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="Photos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#958378" />
+    </RelativeLayout>
+
+    
+    <com.penq.utils.LoadMoreGrid
+        android:id="@+id/sil_lmdImageGrid"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:horizontalSpacing="0dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        android:smoothScrollbar="false"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" >
+    </com.penq.utils.LoadMoreGrid>
+
+    <TextView
+        android:id="@+id/sil_tvNoData"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No Data Found"
+        android:visibility="invisible" />
+
+</LinearLayout>

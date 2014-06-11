@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    >
+
+    <ImageView
+        android:id="@+id/larn_ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Look Around"
+        android:textColor="#8A8A8A"
+        android:textSize="20sp" />
+
+    <!-- <ListView -->
+    <!-- android:id="@+id/la_lvList" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_below="@+id/textView1" -->
+    <!-- android:fadingEdge="none" -->
+    <!-- android:layout_marginTop="10dp" > -->
+    <!-- </ListView> -->
+
+    <com.penq.utils.LoadMoreListView
+        android:id="@+id/la_lvList"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:horizontalSpacing="0dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:layout_below="@+id/textView1"
+        android:scrollingCache="true"
+        android:smoothScrollbar="false"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" >
+    </com.penq.utils.LoadMoreListView>
+
+</RelativeLayout>

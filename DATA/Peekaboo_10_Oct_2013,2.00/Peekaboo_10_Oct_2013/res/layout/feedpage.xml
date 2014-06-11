@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context=".MainActivity1" >
+
+    <com.penq.utils.LoadMoreGrid
+        android:id="@+id/feedgrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fastScrollEnabled="false"
+        android:horizontalSpacing="0dp"
+        android:numColumns="2"
+        android:fadingEdge="none"
+        android:scrollingCache="true"
+        android:scrollbars="none"
+        android:smoothScrollbar="false"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" >
+
+    </com.penq.utils.LoadMoreGrid>
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No Data Found"
+        android:visibility="invisible" />
+
+</LinearLayout>

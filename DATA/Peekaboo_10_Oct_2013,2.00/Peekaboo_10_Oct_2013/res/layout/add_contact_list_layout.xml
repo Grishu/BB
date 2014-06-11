@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+
+    <TextView
+        android:id="@+id/adc_tvNamelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/font_color" />
+
+    <TextView
+        android:id="@+id/adc_tvNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/adc_tvNamelbl"
+        android:layout_toLeftOf="@+id/adc_cbCheck"
+        android:text="test"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_centerVertical="true"
+        android:textColor="@color/font_color"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<!--     <TextView -->
+<!--         android:id="@+id/tvEmaillbl" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_below="@+id/tvNamelbl" -->
+<!--         android:text="Email:" -->
+<!--         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--         android:textColor="@color/font_color" /> -->
+
+<!--     <TextView -->
+<!--         android:id="@+id/tvEmailValue" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_below="@id/tvNameValue" -->
+<!--         android:layout_marginLeft="10dp" -->
+<!--         android:layout_toRightOf="@+id/tvEmaillbl" -->
+<!--         android:text="test@d" -->
+<!--         android:textColor="@color/font_color" -->
+<!--         android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+    <CheckBox
+        android:id="@+id/adc_cbCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_centerVertical="true"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_forgt"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/unspacedlayot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/usl_tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/font_white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/fdl_lvLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:scaleType="center"
+                android:src="@drawable/login_email" />
+
+            <EditText
+                android:id="@+id/usl_etStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/coustom_editext"
+                android:hint="Enter your status here..."
+                android:padding="10dp"
+                android:inputType="textFilter"
+                android:singleLine="true"
+                android:textColor="@color/font_color"
+                android:textColorHint="@color/font_color" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/usl_rlLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/usl_btnDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_submit"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/usl_btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/btn_cancel"
+                android:padding="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

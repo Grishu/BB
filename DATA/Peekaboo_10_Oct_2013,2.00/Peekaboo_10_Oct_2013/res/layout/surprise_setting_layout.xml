@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/setting_btn_bg" >
+    
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@color/font_white"
+         >
+         
+        <ImageView 
+            android:id="@+id/ss_btn_bk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"/>
+    
+    <TextView
+            android:id="@+id/sstextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#958378" />
+    
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/stag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true" />
+    
+    <Button 
+        android:id="@+id/addtag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Tag"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/removetag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Tag"
+        android:textStyle="bold" />
+    
+    </LinearLayout>
+    
+
+</RelativeLayout>

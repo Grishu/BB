@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity1" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:src="@drawable/arrow"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/settingsView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:layout_toRightOf="@id/imageView1"
+            android:src="@drawable/slideshow_setting"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#958378" />
+
+        <ImageView
+            android:id="@+id/m_ivReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_notif"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentswitcherframe"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tabslyt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/iv_feed1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:cropToPadding="true"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/iv_suprise"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:cropToPadding="true"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/gift" />
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/home_cam_new" />
+
+        <ImageView
+            android:id="@+id/iv_msgs"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/message" />
+
+        <ImageView
+            android:id="@+id/iv_social"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/people" />
+    </LinearLayout>
+
+</LinearLayout>

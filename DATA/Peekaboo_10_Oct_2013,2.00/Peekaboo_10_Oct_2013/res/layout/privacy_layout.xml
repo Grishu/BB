@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/prl_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="top|center"
+            android:padding="10dp"
+            android:text="Privacy"
+            android:textColor="#8A8A8A"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/prl_ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/setting_btn_bg">
+
+        <TextView
+            android:id="@+id/prl_tvLocTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left|center"
+            android:text="Location services: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/font_white" />
+
+        <ToggleButton
+            android:id="@+id/prl_tbCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:checked="true"
+            android:text="ToggleButton" />
+
+    </RelativeLayout>
+
+</LinearLayout>

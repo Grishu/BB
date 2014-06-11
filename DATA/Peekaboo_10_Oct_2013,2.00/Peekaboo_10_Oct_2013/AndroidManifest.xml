@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zeal.peekaboo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.zeal.peekaboo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.zeal.peekaboo.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" >
+    </uses-feature>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.zeal.peekaboo.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.Register_activity"
+            android:label="@string/title_activity_register_activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.Tabbedmaincontroller"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.FeedDetail"
+            android:label="@string/title_activity_feed_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.SurpriseFullscreen"
+            android:label="@string/title_activity_surprise_fullscreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.FilterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.ShakeActivity"
+            android:label="@string/title_activity_shake"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.DiceRollActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.LookAroundActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.DiceRollDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.FollowersListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zeal.peekaboo.ContactListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zeal.peekaboo.NextActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.MainActivity1"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.MessageContactList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.PeekabooFacebookConnectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.AddCommentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.ShakeResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.UploadProfileImage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.SocialPhotoViewAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zeal.peekaboo.ShowMessageDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.FindFriendsLinkAccountAcitivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.AddressBookMatchingContactActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.MyAccountActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.ChangePasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.PrivacyStatementActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.SurpriseSetting"
+            android:configChanges="orientation"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.zeal.peekaboo.TagList"
+            android:label="@string/title_activity_tag_list" >
+        </activity>
+        <activity
+            android:name=".SearchImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PromoteScreenActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/applicationId" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.zeal.peekaboo" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="GCMIntentService" >
+        </service>
+        
+    </application>
+
+</manifest>

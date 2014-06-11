@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/op_socialtop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/social_green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/imagemaskframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/op_iv_profpic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_mask_op"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/imgmask" />
+        </FrameLayout>
+
+        <!-- <FrameLayout -->
+        <!-- android:id="@+id/imagemaskframe" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:padding="10dp" > -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/op_iv_profpic" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- android:adjustViewBounds="true" -->
+        <!-- android:src="@drawable/ic_launcher" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/imageView2" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:adjustViewBounds="true" -->
+        <!-- android:src="@drawable/imgmask" /> -->
+        <!-- </FrameLayout> -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/op_tvProfilename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Mica Bravia"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fcfefe" />
+
+            <TextView
+                android:id="@+id/op_tvprofiledisc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fcfefe" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/socialmiddle1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/photsno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/op_tvPhotoCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#958378" />
+
+            <TextView
+                android:id="@+id/tv_sp_pht_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHOTOS"
+                android:textColor="#958378" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/socialstrip1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:src="@drawable/vstrip" />
+
+        <LinearLayout
+            android:id="@+id/followersno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/op_tvFollowersCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#958378" />
+
+            <TextView
+                android:id="@+id/tv_sp_followers_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOLLOWERS"
+                android:textColor="#958378" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:src="@drawable/vstrip" />
+
+        <LinearLayout
+            android:id="@+id/contactsno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/op_tvCntctsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#958378" />
+
+            <TextView
+                android:id="@+id/tv_sp_cntcts_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACTS"
+                android:textColor="#958378" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/socialmiddle2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/op_llFollowerLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sp_start_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:minLines="2"
+                android:text="FOLLOW"
+                android:textColor="#958378" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:src="@drawable/vstrip" />
+
+        <LinearLayout
+            android:id="@+id/op_llContactLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sp_add_to_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:minLines="2"
+                android:text="ADD TO CONTACTS"
+                android:textColor="#958378" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/op_gvImageList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
+        android:background="#ffff"
+        android:numColumns="3" >
+    </GridView>
+
+</LinearLayout>

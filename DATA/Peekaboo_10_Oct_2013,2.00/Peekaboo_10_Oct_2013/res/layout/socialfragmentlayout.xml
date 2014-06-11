@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/socialtop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/social_green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/imagemaskframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/sp_iv_profpic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:layout_margin="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/imgmask" />
+        </FrameLayout>
+        <!-- ====================================================== -->
+
+
+        <!-- <FrameLayout -->
+        <!-- android:id="@+id/imagemaskframe" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:padding="10dp" > -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/sp_iv_profpic" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- android:adjustViewBounds="true" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/imageView2" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:adjustViewBounds="true" -->
+        <!-- android:src="@drawable/imgmask" /> -->
+        <!-- </FrameLayout> -->
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sp_profilename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fcfefe" />
+
+            <TextView
+                android:id="@+id/sp_profiledisc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is my Peak a Boo account. I post selfies here."
+                android:textColor="#fcfefe"
+                android:minWidth="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/socialmiddle1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/photsno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sp_phto_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#958378" />
+
+            <TextView
+                android:id="@+id/tv_sp_pht_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHOTOS"
+                android:textColor="#958378" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/socialstrip1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:src="@drawable/vstrip" />
+
+        <LinearLayout
+            android:id="@+id/followersno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sp_followers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#958378" />
+
+            <TextView
+                android:id="@+id/tv_sp_followers_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOLLOWERS"
+                android:textColor="#958378" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:src="@drawable/vstrip" />
+
+        <LinearLayout
+            android:id="@+id/contactsno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sp_cntcts_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#958378" />
+
+            <TextView
+                android:id="@+id/tv_sp_cntcts_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACTS"
+                android:textColor="#958378" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/socialmiddle2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sp_look_around"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:minLines="2"
+                android:text="LOOK\nAROUND"
+                android:textColor="#958378" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:src="@drawable/vstrip" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sp_shake_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:minLines="2"
+                android:text="SHAKE\nDEVICE"
+                android:textColor="#958378" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:src="@drawable/vstrip" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sp_dice_roll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:minLines="2"
+                android:text="DICE\nROLL"
+                android:textColor="#958378" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_sp_photogrid"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
+        android:background="#ffffff"
+        android:columnWidth="500dp"
+        android:fadingEdge="none"
+        android:horizontalSpacing="0dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp" >
+    </GridView>
+
+</LinearLayout>

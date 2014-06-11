@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+ <item android:drawable="@drawable/atext"  android:state_pressed="false" />
+    <!-- Inactive tab -->
+    <item android:drawable="@drawable/btext"  android:state_pressed="true" />
+    <!-- Pressed tab -->
+  
+
+</selector>

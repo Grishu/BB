@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_btn_bg" >
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/myaccount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setting_btn_bg"
+            android:text="@string/lbl_my_account"
+            android:textColor="@color/font_white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/findfriends"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setting_btn_bg"
+            android:text="@string/lbl_find_friends_link_accounts"
+            android:textColor="@color/font_white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setting_btn_bg"
+            android:text="@string/lbl_privacy"
+            android:textColor="@color/font_white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/preferences"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setting_btn_bg"
+            android:text="@string/lbl_preferences"
+            android:textColor="@color/font_white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/setting_btn_bg"
+            android:text="@string/lbl_log_out"
+            android:textColor="@color/font_white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentswitcherframe"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" >
+    </FrameLayout>
+
+</RelativeLayout>
